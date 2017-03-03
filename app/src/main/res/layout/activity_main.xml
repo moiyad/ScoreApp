@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="course.elm.apllicationweek2.MainActivity"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="175dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:weightSum="1">
+
+            <TextView
+                android:text="Team Number 1"
+                android:paddingLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TextViewTeam" />
+
+            <TextView
+                android:text="0"
+                android:paddingLeft="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/score" />
+
+            <Button
+                android:text="3 point"
+                android:textSize="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button21"
+                android:onClick="point3" />
+
+            <Button
+                android:text="2 point"
+                android:textSize="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="point2"
+                android:id="@+id/button2point" />
+
+            <Button
+                android:text="1 point"
+                android:textSize="10sp"
+                android:onClick="point1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button1point" />
+
+            <TextView
+                android:text="0"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="70dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/faull" />
+
+            <Button
+                android:text="Faull"
+                android:textSize="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="faull"
+                android:id="@+id/faullbuttom" />
+
+            <Button
+                android:text="Reset"
+                android:textSize="10sp"
+                android:layout_marginTop="140dp"
+                android:onClick="reset"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:id="@+id/button1reset" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            >
+
+            <TextView
+                android:text="Team Number 2"
+                android:paddingLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewTeam2" />
+
+            <TextView
+                android:text="0"
+                android:paddingLeft="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/score2" />
+
+            <Button
+                android:text="3 point"
+                android:textSize="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button31"
+                android:onClick="point3t2" />
+
+            <Button
+                android:text="2 point"
+                android:textSize="10sp"
+                android:onClick="point2t2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button333" />
+
+            <Button
+                android:text="1 point"
+                android:textSize="10sp"
+                android:onClick="point1t2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button1point2t" />
+
+            <TextView
+                android:text="0"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="70dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/faull2" />
+
+            <Button
+                android:text="Faull"
+                android:textSize="10sp"
+                android:onClick="faull2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/faullbuttom2" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
